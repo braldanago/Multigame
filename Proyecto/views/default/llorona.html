@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8">
+		<meta name="description" content="Juego llorona">
+		<meta name="keywords" content="canvas colisiones jquery ajax">
+		<meta name="author" content="Alejandro Daza">
+		<title>La leyenda de la llorona</title>
+		<link rel="stylesheet" href="{{=URL('static','css/estilosLlorona.css')}}" media="screen">
+		{{include 'web2py_ajax.html'}}<!-- this includes jquery.js, calendar.js/.css and web2py.js -->
+		<script src="{{=URL('static','js/llorona/quica.js')}}"></script>
+		<script src="{{=URL('static','js/llorona/calaca.js')}}"></script>
+		<script src="{{=URL('static','js/llorona/scriptLlorona.js')}}"></script>
+
+		
+		
+	</head>
+	<body>
+		<aside>
+			<form action="recomendar" id="frmoculto">
+                <input type="hidden" id="usuario" name="usuario" value="{{=player}}">
+				<input type="hidden" id="juego" name="juego" value="llorona">
+                <input type="hidden" id="oculto" name="oculto" value="0">
+			</form>
+		</aside>
+
+		<section>
+			<canvas id="mi_canvas" width="640" height="480">
+				Tu navegador no es compatible
+			</canvas>			
+		</section>
+		
+		<section>
+			<div id="popup" style="display: none;">
+				<div class="content-popup">
+					<div class="close"><a href="#" id="close"><img src="{{=URL('static','imagenes/close.png')}}"/></a></div>
+					<div>
+					   <h2>Teclas de juego</h2>
+					   <img src="{{=URL('static','imagenes/teclado.png')}}"/>
+					   <h2>Creditos</h2>
+					   <p>Alejandro Paolo Daza Corredor</p>
+						<p>UNIR</p>
+						<p>Computación en el Cliente</p>
+					</div>
+				</div>
+			</div>
+			<h1>La Llorona</h1>
+			<button id="instrucciones">Ver Instrucciones</button><br>
+			<button id="iniciar">Iniciar</button>
+			<button id="enviar">Enviar</button>
+			
+		</section>
+	
+		<audio id="pierde">
+			<source src="{{=URL('static','sonidos/pierde_vida.ogg')}}" type="audio/ogg">
+			<source src="{{=URL('static','sonidos/pierde_vida.mp3')}}" type="audio/mpeg">
+			<source src="{{=URL('static','sonidos/sonidos/pierde_vida.wav')}}" type="audio/wav">
+			Tu navegador no es compatible
+		</audio>
+		
+		<img id="abajo" src="{{=URL('static','imagenes/kika.png')}}"/>
+		<img id="arriba" src="{{=URL('static','imagenes/kika2.png')}}"/>
+		<img id="salto" src="{{=URL('static','imagenes/kika.png')}}"/>
+		<img id="sentado" src="{{=URL('static','imagenes/kika3.png')}}"/>
+		<img id="calaca_1" src="{{=URL('static','imagenes/calaca_child.png')}}"/>
+		<img id="calaca_2" src="{{=URL('static','imagenes/calaca_girl.png')}}"/>
+		
+		
+	</body>
+</html>

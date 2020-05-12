@@ -1,0 +1,53 @@
+#cuadrito{
+  width:150px;
+  padding:50px;
+  margin:00px auto;
+  border-radius:80px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #DAA3A3;
+  background-color: white;
+}
+#segundos{
+  width:50px;
+  font-size: 30px;
+  font-weight: bold;
+  color: red;
+  border:none;
+}
+#contador{
+    font-size: 80px;
+	font-weight: bold;
+	color: #a3bad8;
+}
+#boton{
+  width:150px;
+  height:40px;
+  border:none;
+  border-radius:10px;
+  font-weight: bold;
+  color: #DAA3A3;
+
+}
+#nuevo{
+  width:150px;
+  height:40px;
+  border:none;
+  border-radius:10px;
+  font-weight: bold;
+  color: #DAA3A3;
+}
+
+.boton:hover{
+    background:blue;
+}
+
+body {
+	background-color:#000000;
+    background:url('imagenes/fondoFast.jpg');
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        margin:0px auto 0px auto;
+}

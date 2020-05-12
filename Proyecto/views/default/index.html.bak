@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8">
+		<meta name="description" content="Juego asteroids">
+		<meta name="keywords" content="juego transformaciones asteroids colisiones jquery canvas ajax">
+		<meta name="author" content="Alejandro Paolo Daza">
+		<title>Asteroids HTML5</title>
+        <link rel="stylesheet" href="{{=URL('static','css/estilosIndex.css')}}"/>
+        <link rel="shortcut icon" href="{{=URL('static','images/favicon.ico')}}" type="image/x-icon">
+        <link rel="apple-touch-icon" href="{{=URL('static','images/favicon.png')}}">
+        {{include 'web2py_ajax.html'}} <!-- this includes jquery.js, calendar.js/.css and web2py.js -->
+        <script src="{{=URL('static','js/asteroids/scriptAsteroids.js')}}"></script>
+		
+	</head>
+	<body>
+		<div>
+		<center>
+			<br><br><br><br>
+			<h1>BIENVENIDO A MULTIGAME</h1>
+			<div ALIGN="center">
+				<h2>Registrate: </h2>
+				<form action="opciones">
+				  Usuario :      
+				  <input name="visitor_name" />
+				  <br><br>	
+				  Contraseña:
+				  <input name="password" />
+				  <br><br>
+				  <input type="submit" />
+				</form>
+			</div>
+		</center>
+		</div>
+		
+	</body>
+</html>
+

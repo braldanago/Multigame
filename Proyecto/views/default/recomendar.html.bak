@@ -1,0 +1,50 @@
+{{extend 'layout.html'}}
+<h1>Tu puntaje ha sido guardado en la bd</h1>
+{{if (len(regs) > 0 and len(regs2) > 0):}}
+<h4>
+    Puntajes anteriores: <br>
+</h4>
+<TABLE BORDER="none" align=center> 
+                <TR>
+                    <TD>
+						<p>
+                            Ascendentemente:
+							<ol>
+                            {{for r in regs2:}}
+                            <li><b>{{=r[0]}}:</b>{{=r[1]}}</li>
+                            {{pass}}
+                            </ol>
+
+                            
+						</p>
+					</TD> 
+                    <TD>
+						<p>
+                            Descendentemente:
+                            <ol>
+                            {{for r in regs:}}
+                            <li><b>{{=r[0]}}:</b>{{=r[1]}}</li>
+                            {{pass}}
+                            </ol>
+
+                            {{else: pass}}
+						</p>
+					</TD>
+                </TR>
+    </table>
+
+							
+
+
+
+
+
+
+
+
+
+
+<h2>{{=player}}:</h2>
+
+Tal vez te interese jugar más juegos, ve a la pagina principal para más diversión.
+<br>

@@ -1,0 +1,70 @@
+body {
+	background-color:#000000;
+    background:url('../imagenes/fondoTank.jpg');
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    margin:0px auto 0px auto;
+}
+
+h1, h3{
+	color:#ffffff;
+}
+aside {
+	float: right;
+	clear: none;
+	margin:2em;
+	padding:1em;
+	text-align: center;
+}
+
+ul {
+	color:#ffffff;
+	text-align: left;
+}
+
+section {
+	height: 550px;
+    width: 750px;
+	background-color:#333322;
+	border:2px solid;
+	border-color:#ffffff;
+	border-radius:15px;
+	margin:2em;
+	padding:1em;
+	text-align: center;
+        margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+	/* background-color:#333322; */
+	/* border:2px solid; */
+	/* border-color:#ffffff; */
+	/* border-radius:15px; */
+	/* margin:2em; */
+	/* padding:1em; */
+	/* text-align: center; */
+}
+
+canvas {
+	background:url('../imagenes/campo.png');
+	color:#ffffff;
+	border:2px solid;
+	border-color:#ffffff;
+	border-radius:15px;
+}
+
+p {
+	padding:0.1em;
+	color:#ffffff;
+}
+
+button {
+	margin:0.3em;
+	color:#ff0000;
+}
+
+#ship, #asteroid, #explosion {
+	display:none;
+}

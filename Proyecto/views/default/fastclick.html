@@ -1,0 +1,43 @@
+<html lang="es">
+	<head>
+		<meta charset="utf-8">
+		<meta name="description" content="Juego contador">
+		<meta name="keywords" content="juego velocidad clics canvas ajax">
+		<meta name="author" content="Brayan Aldana">
+		<title>Fast-Click</title>
+		<link rel="stylesheet" type="text/css" href="{{=URL('static','css/estilosFast.css')}}" media="screen">
+        {{include 'web2py_ajax.html'}}<!-- this includes jquery.js, calendar.js/.css and web2py.js -->
+		<script src="{{=URL('static','js/fastClick/script.js')}}" language="JavaScript1.2"></script>
+	</head>
+	<body>
+		<center>
+			<h1>Fast-Click!</h1>
+			<h2>Jugador: {{=player}}</h2>
+			<h2>Haz la mayor cantidad de clicks en 10 segundos.</h2>
+		</center>
+		
+		<div id="cuadrito">
+			<center>
+				Tiempo: <input type="text" id="segundos" value="0" /><br/><br />
+				<div id="contador">0</div>
+			</center>
+			<br/>
+		  
+			<input type="button" id="boton" class="boton" value="+1" onClick="cambiar();">
+			  
+			<input type="button" id="nuevo" value="Iniciar" onClick="nuevo();">
+			
+			<form action="recomendar">
+				<center>
+					<input type="hidden" id="usuario" name="usuario" value="{{=player}}">
+					<input type="hidden" id="juego" name="juego" value="fastclick">
+					<input type="hidden" id="oculto" name="oculto" value="0">
+					<input type="submit" value="Enviar">
+				</center>
+			</form>
+		</div>
+		
+		
+	</body>
+
+</html>

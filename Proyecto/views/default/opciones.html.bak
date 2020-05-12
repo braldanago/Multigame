@@ -1,0 +1,44 @@
+{{extend 'layout.html'}}
+
+<h1>Bienvenido : {{=player}}</h1>
+<h2>Seleccione el juego de su preferencia:</h2>
+<center> 
+    
+	
+	
+	
+	
+	<TABLE BORDER="none" align=center> 
+                <TR>
+                    <TD>
+						<p>
+							<form action="asteroids">
+								<input type="hidden" id="usuario" name="usuario" value="{{=player}}">
+								<input type="submit" value="Asteroids" />
+          
+							</form>
+						</p>
+					</TD> 
+                    <TD>
+						<p>
+							<form action="llorona">
+								<input type="hidden" id="usuario" name="usuario" value="{{=player}}">
+								<input type="submit" value="Llorona" />
+							</form>
+						</p>
+					</TD> 
+                    <TD>
+						<p>
+							<form action="fastclick">
+								<input type="hidden" id="usuario" name="usuario" value="{{=player}}">
+								<input type="submit" value="fastclick" />
+							</form>
+						</p>
+					</TD>      
+                </TR>
+    </table>
+    
+    
+    
+    
+</center>
